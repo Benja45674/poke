@@ -15,7 +15,7 @@ export default function App() {
       return;
     }
 
-    fetch('https://pokeapi.co/api/v2/pokemon?limit=24')
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=12')
       .then((res) => res.json())
       .then(async (data) => {
         const detalles = await Promise.all(
